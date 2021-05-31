@@ -39,7 +39,14 @@ namespace C__project  //プログラムを分類する入れ物みたいなも�
             str1 = Console.ReadLine();  //コンソールからstr1に文字列を入力
             Console.Write("str2=");
             str2 = Console.ReadLine();  //コンソールからstr2に文字列を入力
-            Console.WriteLine("str1 + str2 = " + str1 + str2);
+            Console.WriteLine("str1 + str2 = " + str1 + str2); 
+            //定数
+            const int number = 100;
+            const String str = "hoge";
+            Console.WriteLine(number);
+            Console.WriteLine(str);
+            //number = 1000; constがついた変数は値を変えられない
+            //str = "abcd";  エラーが発生する
         }
     }
 }
