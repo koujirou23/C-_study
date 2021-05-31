@@ -32,6 +32,14 @@ namespace C__project  //プログラムを分類する入れ物みたいなも�
             int f = 10;
             double g = (double)f;
             Console.WriteLine(g);
+            //コンソールから文字を入力
+            String str1, str2;
+            Console.WriteLine("文字列を入力してください");
+            Console.Write("str1=");
+            str1 = Console.ReadLine();  //コンソールからstr1に文字列を入力
+            Console.Write("str2=");
+            str2 = Console.ReadLine();  //コンソールからstr2に文字列を入力
+            Console.WriteLine("str1 + str2 = " + str1 + str2);
         }
     }
 }
