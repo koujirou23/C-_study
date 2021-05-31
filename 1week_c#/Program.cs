@@ -13,6 +13,8 @@ namespace C__project  //プログラムを分類する入れ物みたいなも�
             Console.WriteLine("改行された");
             int a = 3;
             int b = 2;
+            double c = 3.5;
+            int d = 3;
             String name = "田中";
             Console.WriteLine(a);
             Console.WriteLine(b);
@@ -21,6 +23,15 @@ namespace C__project  //プログラムを分類する入れ物みたいなも�
             Console.WriteLine(a/b);
             Console.WriteLine(name);
             Console.WriteLine(name + "は" + a * 7 + "歳です");
+            Console.WriteLine(c);  //基本はJAVAと同じみたい
+            Console.WriteLine("代入前 " +d);
+            d = 5; //代入
+            Console.WriteLine("代入後 " +d);
+            int e = (int)1.23;  //キャスト
+            Console.WriteLine(e);
+            int f = 10;
+            double g = (double)f;
+            Console.WriteLine(g);
         }
     }
 }
