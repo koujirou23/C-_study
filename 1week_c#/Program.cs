@@ -193,6 +193,28 @@ namespace C__project  //プログラムを分類する入れ物みたいなも�
             //  showAgeAndName()メソッドで、それぞれのインスタンスのnameとageを表示
             p1.ShowAgeAndName();
             p2.ShowAgeAndName();
+            
+            // ランダム 1-6の数値が出力される
+            Random dice = new Random();
+            int roll = dice.Next(1,7);
+            Console.WritLine(roll);
+            
+            // ランダム　式展開方法だと思う
+            Random dice = new Random();
+            int roll1 = dice.Next();
+            int roll2 = dice.Next(101);
+            int roll3 = dice.Next(50, 101);
+
+            Console.WriteLine($"First roll : {roll1}");
+            Console.WriteLine($"Second roll: {roll2}");
+            Console.WriteLine($"Third roll: {roll3}");
+            // 数値を比較(大きいほう)
+            int firstValue = 500;
+            int secondValue = 600;
+            int largerValue;
+
+            largerValue = Math.Max(firstValue,secondValue);
+            Console.WriteLine(largerValue);
         }
     }
 }
